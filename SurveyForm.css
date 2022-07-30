@@ -69,7 +69,7 @@ option{
 }
 
 textarea{
-  min-width: 80%;							          /*USE 80% OF FULL WIDTH OF SPACE AVAILABLE WITHIN FORM*/
+  min-width: 98%;							          /*USE 80% OF FULL WIDTH OF SPACE AVAILABLE WITHIN FORM*/
   min-height: 50px;							        /*MAKE 50PX MIN-HEIGHT*/
 }
 
