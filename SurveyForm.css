@@ -19,7 +19,8 @@ body
 
 #title{
   font-size: 2rem;						/*TITLE SHOULD HAVE FONT SIZE TWICE AS LARGE AS NORMAL*/
-  text-align: center;         
+  text-align: center;     
+  margin-top: 1rem;
 }
 
 #description{
@@ -27,6 +28,7 @@ body
   font-size: 1.25rem;						/*DESCRIPTION HAS SLIGHTLY LARGER TEXT SIZE THAN NORMAL WORDS*/
   line-height: 1.2;						  /*PUSH IT UP TOGETHER*/
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 form{
@@ -38,6 +40,7 @@ form{
   display: block;						            /*DISPLAY IN ITS OWN LINE*/
   background-color: lightblue;				
   padding: 2.5rem;						          /*GIVE SOME SPACE ALL AROUND IT*/
+  padding-top: 1rem;
 }
 
 label{
