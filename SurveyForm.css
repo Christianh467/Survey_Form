@@ -10,33 +10,31 @@ body
   line-height: 1.4;						/*HOW CLOSE THE LINES ARE SPACED*/
 }
 
-.heading{
-  width: 50%;							    /*USE 50% OF AVAILABLE SPACE*/
-  margin: 0 auto;						  /*ELIMINATE ANY MARGINS ON THE TOP AND BOTTOM, AUTO FOR EITHER SIDE; CENTERING IN MIDDLE*/
-  padding: .625rem;						/*GIVE SOME ROOM AROUND THE CONTENT*/
-  margin-bottom: 1.5rem;			/*GIVE SPACE BTW HEADING AND REST OF CONTENT*/
-}
-
-.title, .description{
-  margin-top: 0;						  /*ELIMINATE ANY CURRENT MARGINS*/
+#title, #description{
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 0;
   margin-bottom: .5rem;				/*GIVE SOME SPACE ON THE BOTTOM*/
-  text-align: center;					/*MAKE TEXT ALIGN IN THE CENTER*/
 }
 
-.title{
+#title{
   font-size: 2rem;						/*TITLE SHOULD HAVE FONT SIZE TWICE AS LARGE AS NORMAL*/
+  text-align: center;         
 }
 
-.description{
+#description{
   font-style: italic;						/*MAKE DESCRIPTION ITALIC*/
   font-size: 1.25rem;						/*DESCRIPTION HAS SLIGHTLY LARGER TEXT SIZE THAN NORMAL WORDS*/
-  line-height: 1.2;						  /*PUSH IT TOGETHER SLIGHTLY SMALLER*/
+  line-height: 1.2;						  /*PUSH IT UP TOGETHER*/
+  text-align: center;
 }
 
 form{
   min-width: 100px;						          /*OUR FORM SHOULD TRY TO STAY A MIN OF 100 PIXELS*/
   width:      50%;						          /*USE 50% OF AVAILABLE SPACE*/
-  margin:  0 auto 1.25rem auto;					/*NO MARGINS ON TOP, AUTO THE SIDES TO CENTER, AND 1.25 RELATIVE UNITS OF SPACE BELOW*/
+  max-width: 1200px;                    /*KEEPS THE FORM FROM STRETCHING TOO WIDE*/
+  margin:  0 auto;					            /*NO MARGINS ON TOP, AUTO THE SIDES TO CENTER*/
+  margin-bottom: 1rem;
   display: block;						            /*DISPLAY IN ITS OWN LINE*/
   background-color: lightblue;				
   padding: 2.5rem;						          /*GIVE SOME SPACE ALL AROUND IT*/
@@ -44,15 +42,14 @@ form{
 
 label{
   display: flex;						            /*STRETCH TO FIT YOUR LINE*/
-  align-items: center;						      /*NOT SURE WHAT THIS DOES*/
+  align-items: center;						      /*VERTICALLY TEXT IN THE CENTER*/
   font-size: 1.25rem;
-  margin-top: .5rem;						        /*GIVE SOME SPACE ON TOP AND BOTTOM*/
-  margin-bottom: .5rem;
+  margin: 1.5rem 0;
 }
 
-.userInfo,select{
-  width: 100%;							            /*USE THE FULL AMOUNT OF SPACE IN THE FORM*/
-  height: 2.375rem;						          /*HEIGHTEN UP THE INPUT BAR A BIT*/
+.userInfo, select{
+  width: 90%;							              /*USE 90% OF THE FULL AMOUNT OF SPACE IN THE FORM*/
+  height: 1.8rem;						            /*HEIGHTEN UP THE INPUT BAR A BIT*/
   padding: .375rem .5rem; 					    /*THIS AFFECTS THE WORDS WITHIN THE INPUT BAR*/
   cursor: text;							            /*SHOW A TEXT CURSOR WHEN HOVERING*/
 }
@@ -61,26 +58,27 @@ label,textarea,.userInfo{
   display: block;
 }
 
-
-.radio,.checkbox{
-  min-height: 1.25rem;						/*WHEN MIN-WIDTH & MIN-HEIGHT ARE PRESENT IT CHANGES SIZE OF INPUT BOX(CHECKBOX, OR CIRCULAR RADIO BUTTON)*/
+input[type='radio'], input[type='checkbox']{
+  min-height: 1.25rem;						      /*WHEN MIN-WIDTH & MIN-HEIGHT ARE PRESENT IT CHANGES SIZE OF INPUT BOX(CHECKBOX, OR CIRCULAR RADIO BUTTON)*/
   min-width: 1.25rem;
-  margin-right: .7rem;						/*THIS GIVES SOME SPACE BETWEEN BUTTON DESCRIPTION AND THE BUTTON ITSELF*/
-}
-.options{
-  padding: .5rem .75rem;					/*GIVE SOME SPACE AROUND CHECKBOX LABELS(THE WHOLE CHECKBOXES LINE)*/
+  margin-right: .7rem;						      /*THIS GIVES SOME SPACE BETWEEN BUTTON DESCRIPTION AND THE BUTTON ITSELF*/
 }
 
-.commentBox{
-  width: 100%;							      /*USE FULL WIDTH OF SPACE AVAILABLE WITHIN FORM*/
-  height: 10%;							      /*MAKE 10% OF FULL AMOUNT OF HEIGHT*/
+option{
+  padding: .5rem .75rem;					      /*GIVE SOME SPACE AROUND CHECKBOX LABELS(THE WHOLE CHECKBOXES LINE)*/
 }
 
-button{
+textarea{
+  min-width: 80%;							          /*USE 80% OF FULL WIDTH OF SPACE AVAILABLE WITHIN FORM*/
+  min-height: 50px;							        /*MAKE 50PX MIN-HEIGHT*/
+}
+
+#submit{
   width: 100%;
   background-color: lightgreen;
   color: black;
   border: none;
-  margin: 1.5rem auto auto;					/*GIVE SOME SPACE FROM THINGS ABOVE,*/
-  padding: .75rem;						      /*THIS EFFECTS SIZE OF THE BUTTON, WORDS WILL ALWAYS BE CENTERED UNLESS YOU PAD ONE SIDE*/
+  margin: 1.5rem auto;					        /*GIVE SOME SPACE FROM THINGS ABOVE,*/
+  margin-bottom: 0;
+  padding: .75rem;						          /*THIS EFFECTS SIZE OF THE BUTTON, WORDS WILL ALWAYS BE CENTERED UNLESS YOU PAD ONE SIDE*/
 }
